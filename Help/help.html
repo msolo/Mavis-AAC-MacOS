@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0 viewport-fit=cover">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="icon" href="/favicon.png" type="image/png">
+        <title>
+        </title>
+        <style>
+    :root {
+   
+  --red-light: rgb(255, 59, 48);
+  --red-dark: rgb(255, 69, 58);
+  --blue-light: rgb(0, 122, 255);
+  --blue-dark: rgb(10, 132, 255);
+  --gray-light: rgb(142, 142, 142);
+  --gray-dark: rgb(142, 142, 142);
+  --gray2-light: rgb(174, 172, 178);
+  --gray2-dark: rgb(99, 99, 102);
+  --gray3-light: rgb(199, 199, 204);
+  --gray3-dark: rgb(72, 72, 74);
+  --gray4-light: rgb(209, 209, 214);
+  --gray4-dark: rgb(58, 58, 60);
+  --gray5-light: rgb(229, 229, 234);
+  --gray5-dark: rgb(44, 44, 46);
+  --gray6-light: rgb(242, 242, 247);
+  --gray6-dark: rgb(28, 28, 30);
+  --gray7-light: #f8f8fa;
+
+  --lbl-font-family: verdana, sans-serif;
+  --lbl-color-jersey-blue: #2484C6;
+  --lbl-color-jersey-buff: #FFCA66;
+  --lbl-color-culater-blue: #304975;
+  --lbl-color-blue: #224A78;
+  --lbl-mobile-width: 600px;
+  --lbl-radius-default: 0.5rem;
+  --lbl-radius-small: 0.25rem;
+
+  --main-bg-color: white;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  background: var(--main-bg-color);
+  font-family: var(--lbl-font-family);
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  display: flex;
+  margin: 1rem;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav ul {
+  list-style: none;
+
+  display: flex;
+  align-items: flex-end;
+
+   
+  gap: 1.5rem;
+}
+
+header nav ul li {
+  display: flex;
+}
+
+header .spacer {
+  flex-grow: 1;
+   
+}
+
+nav a {
+  color: var(--lbl-color-blue);
+  text-decoration: none;
+}
+
+nav a.active {
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+.toc {
+  background: var(--gray7-light);
+  border: 1px solid var(--gray4-light);
+  border-radius: var(--lbl-radius-default);
+  padding: 1rem;
+}
+
+.toc h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.toc ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 1.5rem;
+}
+
+.toc li {
+  padding-left: 0;
+  margin: 0.5em 0;
+}
+
+.toc a:hover {
+  text-decoration: underline;
+}
+
+.center {
+  text-align: center;
+}
+
+.appstore-button.button {
+  min-width: 120px;
+  min-height: 40px;
+}
+
+ 
+@media (min-width: 600px) {
+
+  aside,
+  .sidebar {
+    width: 33.33%;
+    float: right;
+  }
+
+  .toc {
+    margin: 1rem;
+  }
+}
+
+main {
+  margin: 1rem;
+  border-top: 1px var(--lbl-color-blue) solid;
+}
+
+main>*:first-child {
+  margin-top: 1rem;
+}
+
+p {
+  margin: 1rem 0;
+  line-height: 1.5em;
+}
+
+figcaption {
+  font-size: smaller;
+  text-align: center;
+  color: var(--gray-light);
+}
+
+footer {
+  font-size: 0.7rem;
+  text-align: center;
+  color: var(--gray-light);
+  padding: 1rem;
+}
+
+footer>*:first-child {
+  border-top: 1px var(--lbl-color-blue) solid;
+  padding: 1rem;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+}
+
+.product>div {
+  margin: 0 1rem;
+}
+
+.product p {
+  margin: 1rem;
+}
+
+.product h1 {
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+main h1 {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+
+main h2 {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+
+main h3 {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+}
+
+main ul {
+  margin-left: 2em;
+  line-height: 1.5em;
+}
+
+main li {
+  margin-bottom: 0.25em;
+}
+
+main blockquote {
+  border-left: var(--lbl-color-blue) 2px solid;
+  padding-left: 1em;
+  margin-left: 1em;
+}
+
+main img {
+  margin: 1rem;
+  max-width: 100%;
+  height: auto;
+}
+
+img.center {
+  display: block;
+  margin: 0.5rem auto;
+}
+
+@media (max-width: 600px) {
+  main img {
+    margin: 0.5rem auto;
+  }
+
+   
+  .product {
+    flex-direction: column;
+  }
+
+  .product>div {
+    margin: 0;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+
+   
+  html {
+    filter: invert(95%) hue-rotate(180deg) brightness(0.95);
+  }
+
+  img:not([src$=".svg"]) {
+    filter: invert(95%) hue-rotate(180deg) brightness(1.05);
+  }
+}
+
+@media (max-width: 600px) {
+
+   
+  .product {
+    flex-direction: column;
+  }
+
+  .product>div {
+    margin: 0;
+  }
+}
+
+form {
+  padding: 1rem;
+  border: 1px solid var(--gray3-light);
+  border-radius: var(--lbl-radius-default);
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+ 
+ 
+
+label {
+  font-weight: bold;
+  margin: 0.5rem 0;
+  display: block;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: var(--lbl-radius-small);
+  border: 1px solid var(--gray-light);
+}
+
+textarea:user-invalid,
+input:user-invalid {
+  border: 2px dashed var(--red-light);
+   
+  padding: calc(0.5rem - 1px);
+}
+
+.button,
+button {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  min-width: 6rem;
+  font-family: var(--lbl-font-family);
+  font-size: 1rem;
+  text-decoration: none;
+  background: var(--lbl-color-blue);
+  color: white;
+  border: none;
+  display: inline-block;
+  border-radius: var(--lbl-radius-default);
+  cursor: pointer;
+  line-height: normal;
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.5;
+}
+  </style>
+    </head>
+    <body>
+        <main>
+            <aside class="sidebar">
+                <nav class="toc">
+                    <h2>
+                        Table of Contents
+                    </h2>
+                    <ul>
+                        <li>
+                            <a href="#mavis-aac-help">Mavis AAC Help</a>
+                        </li>
+                        <li>
+                            <a href="#text-to-speech-intro">Text To Speech Intro</a>
+                        </li>
+                        <li>
+                            <a href="#keyboard-navigation">Keyboard Navigation</a>
+                        </li>
+                        <li>
+                            <a href="#message-history">Message History</a>
+                        </li>
+                        <li>
+                            <a href="#tab-completion">Tab Completion</a>
+                        </li>
+                        <li>
+                            <a href="#facetime-calls">FaceTime Calls</a>
+                        </li>
+                        <li>
+                            <a href="#speak-sentences-automatically">Speak Sentences Automatically</a>
+                        </li>
+                        <li>
+                            <a href="#fixing-pronunciations">Fixing Pronunciations</a>
+                        </li>
+                        <li>
+                            <a href="#soundbites">Soundbites</a>
+                        </li>
+                        <li>
+                            <a href="#noisy-typing">Noisy Typing</a>
+                        </li>
+                        <li>
+                            <a href="#ring-bell">Ring Bell</a>
+                        </li>
+                        <li>
+                            <a href="#sms-button-macos-only">SMS Button (MacOS only)</a>
+                        </li>
+                        <li>
+                            <a href="#settings">Settings</a>
+                            <ul>
+                                <li>
+                                    <a href="#voice-controls">Voice Controls</a>
+                                </li>
+                                <li>
+                                    <a href="#sound-effects">Sound Effects</a>
+                                </li>
+                                <li>
+                                    <a href="#adjusting-the-font-size">Adjusting The Font Size</a>
+                                </li>
+                                <li>
+                                    <a href="#configuration">Configuration</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#soundbites-1">soundbites</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#open-script-macos-only">Open Script (MacOS Only)</a>
+                        </li>
+                        <li>
+                            <a href="#enable-corrector-macos-only">Enable Corrector (MacOS Only)</a>
+                            <ul>
+                                <ul>
+                                    <li>
+                                        <a href="#show-corrections-automatically">Show Corrections Automatically</a>
+                                    </li>
+                                    <li>
+                                        <a href="#corrector-goals">Corrector Goals</a>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <h1 id="mavis-aac-help">
+                Mavis AAC Help
+            </h1>
+            <p>
+                Mavis AAC has a few features designed to make composing messages easier.
+            </p>
+            <p>
+                This application was originally designed and built for a specific person who was a very competent typist, but who also possessed a distinct antipathy for computing technology.
+            </p>
+            <p>
+                The default settings and capabilities were strongly influenced by her needs and abilities as well as my best guesses on how to make living with this technology easier for her. There are many possible ways to modify and improve the software for specific needs.
+            </p>
+            <h1 id="text-to-speech-intro">
+                Text To Speech Intro
+            </h1>
+            <p>
+                You can be lazy. Text to speech does not care about capitalization and usually doesn’t care much about homophones either - <em>their</em>, <em>they’re</em> and <em>there</em> are all pronounced about the same.
+            </p>
+            <p>
+                Sometimes there are subtle differences with some punctuation, like hyphens and commas. It might be noticeable, but is generally not distracting.
+            </p>
+            <p>
+                Unfortunately, right now most of the voices don’t recognize the difference between <code>"Hello."</code>, <code>"Hello?"</code> and <code>"Hello!"</code> – that’s a current limitation of the Apple Speech synthesizer.
+            </p>
+            <p>
+                If there is a persistent problem, there are ways to tweak pronunciation inside the voice synthesizer. See the section on <a href="#fixing-pronunciations">Fixing Pronunciations</a> for me details.
+            </p>
+            <h1 id="keyboard-navigation">
+                Keyboard Navigation
+            </h1>
+            <p>
+                You shouldn’t need to use menus with Mavis AAC most of the time. Hunting through menus takes your fingers off the home row and ends up slowing you down.
+            </p>
+            <p>
+                Whatever you type in the composition text will be spoken when you press <strong>Return</strong>.
+            </p>
+            <p>
+                The last 10 phrases are remembered and you can quickly access them using the <strong>Command</strong> key ⌘ and up ↑ and down ↓ arrow keys.
+            </p>
+            <p>
+                ⌘Delete will remove the currently selected history item.
+            </p>
+            <p>
+                All the standard Mac keyboard tricks work - for instance ⌘A will select all text and you can then delete it all with the <strong>Delete</strong> key. That will let you quickly start over.
+            </p>
+            <p>
+                ⌘← and ⌘→ (<strong>Command</strong> with the left or right arrow keys) will let you skip to the beginning or end of the composition.
+            </p>
+            <p>
+                ⌥← and ⌥→ (<strong>Option</strong> with the left or right arrow keys) will let you skip backward and forward word by word.
+            </p>
+            <p>
+                ⌥ Delete (Option with Delete) will delete a “word” backwards.
+            </p>
+            <h1 id="message-history">
+                Message History
+            </h1>
+            <p>
+                If you need to quickly repeat the last message, <strong>Command</strong> key and Return <strong>⌘-Return</strong> will respeak the last message.
+            </p>
+            <p>
+                Alternatively, <strong>Command</strong> key and up arrow <strong>⌘↑</strong> will recall the last message in the history. <strong>Return</strong> will speak it aloud.
+            </p>
+            <h1 id="tab-completion">
+                Tab Completion
+            </h1>
+            <p>
+                When you press the <strong>Tab</strong> key, Mavis AAC will suggest matching options from the list of preconfigured phrases and available soundbites based on the text already typed. Even small fragments of words can be used and they need not be in order. Matches will be ordered and the best match will be the last in the list, automatically selected.
+            </p>
+            <p>
+                For instance: <code>blinds up</code>
+            </p>
+            <p>
+                Might result in the following suggestions:
+            </p>
+            <ul>
+                <li>
+                    It was nice catching up
+                </li>
+                <li>
+                    Ask me Yes-No questions. It will speed things up.
+                </li>
+                <li>
+                    <strong>Could you raise the blinds up please?</strong>
+                </li>
+            </ul>
+            <p>
+                All of those match some fragment, but the last one matches “best” and would be selected automatically.
+            </p>
+            <p>
+                When the completion menu is showing, you can navigate the completion choices with the up <strong>↑</strong> and down <strong>↓</strong> arrow keys.
+            </p>
+            <p>
+                The first press of the <strong>Return</strong> key will accept the current highlighted completion, and a second press of <strong>Return</strong> will speak the text aloud.
+            </p>
+            <p>
+                The <strong>Escape</strong> key (<strong>esc</strong> on the top left of your keyboard), cancels the completion menu and selects nothing.
+            </p>
+            <blockquote>
+                <p>
+                    NOTE: There is no “best” way to do completions. This mechanism proved simple, fast, predictable and moderately effective. However, there are many ways to potentially alter the behavior.
+                </p>
+            </blockquote>
+            <p>
+                When there is nothing typed, <strong>Tab</strong> brings up a list of all phrases and soundbites.
+            </p>
+            <h1 id="facetime-calls">
+                FaceTime Calls
+            </h1>
+            <p>
+                If you are on a FaceTime call, you can add Mavis AAC to the call so you can speak with both your voice and the synthesizer.
+            </p>
+            <p>
+                Go to the <strong>Chat</strong> menu and select <strong>Start SharePlay</strong>. SharePlay is the name of a FaceTime feature that allows you to share a window on your computer with the person you are talking to.
+            </p>
+            <p>
+                Though this works on MacOS, it is much better supported on iOS devices.
+            </p>
+            <h1 id="speak-sentences-automatically">
+                Speak Sentences Automatically
+            </h1>
+            <p>
+                Mavis can (and does by default) automatically speak each sentence while you type. Technically, it speaks every time the space bar is pressed and the previous sentence ends with a period, exclamation point or question mark.
+            </p>
+            <p>
+                There is a preference for this in the <strong>Chat</strong> menu - <strong>Speak Sentences Automatically</strong>.
+            </p>
+            <h1 id="fixing-pronunciations">
+                Fixing Pronunciations
+            </h1>
+            <p>
+                Under the <strong>Window</strong> menu select <strong>Edit Pronunciations</strong>.
+            </p>
+            <p>
+                Each line of this file corrects the pronunciation of a word.
+            </p>
+            <p>
+                For example, this line below tells the voice synthesizer that “Ez” - should be pronounced like “Ezz” - short for Ezra - instead of like E-Z as in “easy.”
+            </p>
+            <pre><code>Ez|Ezz
+</code></pre>
+            <p>
+                This can’t solve homographs (<em><strong>read</strong> ’em and weep</em> versus <em>I <strong>read</strong> that yesterday</em>), but if that’s a problem, let me know. It’s not unsolvable, just harder.
+            </p>
+            <p>
+                There is no requirement that pronunciation corrections have much to with the orthography. For instance, you can also do:
+            </p>
+            <pre><code>pepsi|coke
+ttyl|talk to you later
+ty|thank you
+thx|thanks
+</code></pre>
+            <p>
+                The only limitation is that only single words are matched.
+            </p>
+            <h1 id="soundbites">
+                Soundbites
+            </h1>
+            <p>
+                Soundbites are voice bank recordings that you can play them back exactly as recorded. The catch is that what you type into Mavis must exactly match the phrase.
+            </p>
+            <p>
+                If you don’t remember the exact phrase, type “z” and hit the <strong>Tab</strong> key - that will bring up all known phrases. You can scroll through them or type a few characters to show a limited set of matching results.
+            </p>
+            <p>
+                You can disable <strong>Soundbites</strong> in the <strong>Chat</strong> menu.
+            </p>
+            <blockquote>
+                <p>
+                    NOTE: Soundbites do not play over Facetime or phone calls.
+                </p>
+            </blockquote>
+            <h1 id="noisy-typing">
+                Noisy Typing
+            </h1>
+            <p>
+                Noisy Typing plays an audible click sound when you type into Mavis. This plays over the speakers to let people know that you are typing “conversationally”, not beavering away on some other distraction on your device.
+            </p>
+            <p>
+                You can disable <strong>Noisy Typing</strong> in the <strong>Chat</strong> menu.
+            </p>
+            <blockquote>
+                <p>
+                    NOTE: Noisy typing sounds do not play over Facetime or phone calls.
+                </p>
+            </blockquote>
+            <h1 id="ring-bell">
+                Ring Bell
+            </h1>
+            <p>
+                The Ring Bell button (or <strong>Command-R</strong> or <strong>⌘R</strong>) plays a ringing bell sound to get someone’s attention without removing what you’ve already typed into Mavis.
+            </p>
+            <p>
+                The Double Bell button (or <strong>Command-Shift-R</strong> or <strong>⌘⇧R</strong>) is a litte louder and more aggressive.
+            </p>
+            <p>
+                The bell sounds were selected to be pleasant, but still capable of getting attention
+            </p>
+            <p>
+                The volume of the ring can be adjusted in the <strong>Settings</strong>.
+            </p>
+            <h1 id="sms-button-macos-only">
+                SMS Button (MacOS only)
+            </h1>
+            <p>
+                The SMS button sends a pre-composed message via Apple Messages to get someone’s attention. This may be delayed for a while, or not arrive - it’s just sending a text message. The recipient and message are controlled in <strong>Settings</strong>.
+            </p>
+            <h1 id="settings">
+                Settings
+            </h1>
+            <p>
+                Adjusting the voice and volumes for various features is possible via the <strong>Settings</strong> panel.
+            </p>
+            <h2 id="voice-controls">
+                Voice Controls
+            </h2>
+            <p>
+                Choose your voice and set it’s basic speaking properties.
+            </p>
+            <h2 id="sound-effects">
+                Sound Effects
+            </h2>
+            <p>
+                Adjust the volume of various sound effect.
+            </p>
+            <h2 id="adjusting-the-font-size">
+                Adjusting The Font Size
+            </h2>
+            <p>
+                Use the <strong>Font</strong> menu and the aptly named <strong>Bigger</strong> and <strong>Smaller</strong> options to adjust your font size so you can use it easily.
+            </p>
+            <h2 id="configuration">
+                Configuration
+            </h2>
+            <p>
+                <strong>Edit Pronunciations</strong> and <strong>Edit Phrases</strong> should be self-explanatory.
+            </p>
+            <p>
+                <strong>Import File</strong> allows you to import several different special files that you have saved on your device.
+            </p>
+            <h3 id="soundbites-1">
+                soundbites
+            </h3>
+            <p>
+                <strong>Show Soundsbites</strong> under <strong>Window</strong> will open the directory where you can place soundbite files.
+            </p>
+            <p>
+                Any number of sound files that are in the <code>.wav</code> or <code>.m4a</code> formats can be placed here. The name of each file will be used as the text to use when matching a soundbite. The matching is not case sensitive, but punctuation matters.
+            </p>
+            <p>
+                For instance <code>Hello.wav</code> and <code>Hello!.wav</code> could be distinct entries. Typing “hello” would only match the first. “hello!” would only match the second.
+            </p>
+            <h1 id="open-script-macos-only">
+                Open Script (MacOS Only)
+            </h1>
+            <p>
+                This is a very simple and rough feature that allows you to stage a conversation ahead of time to save time typing. This has been used for either phone calls or in-person conversations with a doctor.
+            </p>
+            <p>
+                You can paste in series of paragraphs. Right-clicking on a line will let you speak it aloud.
+            </p>
+            <p>
+                It is not a full featured editor and there is no undo support. This is not necessarily a good place to compose your conversation, though it is possible to do so.
+            </p>
+            <h1 id="enable-corrector-macos-only">
+                Enable Corrector (MacOS Only)
+            </h1>
+            <p>
+                The corrector is a small-ish neural network that tries to turn keyboard input with typos into something approximating human speech when you press the Tab key.
+            </p>
+            <p>
+                This currently replaces the default tab complete feature when enabled, though this could be easily adjusted.
+            </p>
+            <p>
+                It will generate up to 5 candidate corrections in approximately one second. Experiments show that is has a reasonble chance of offering the correct answer. This is an area of interest and potential improvement.
+            </p>
+            <p>
+                It is not enabled by default because it is not always correct and not clearly of value in all cases, particularly if typing/motor skills are reasonable.
+            </p>
+            <p>
+                You can turn this feature on/off under the <strong>Chat</strong> menu using the <strong>Enable Corrector</strong> menu option.
+            </p>
+            <h3 id="show-corrections-automatically">
+                Show Corrections Automatically
+            </h3>
+            <p>
+                If the built-in spell/grammar checker detects you have an error, Mavis can automatically trigger the correct when you try to speak something that likely won’t make perfect sense.
+            </p>
+            <p>
+                This is useful as long as the builtin dictionary match the words you normally use. This is on by default if you enable the corrector, but it can be turned off separately via the <strong>Show Corrections Automatically</strong> menu item in the <strong>Chat</strong> menu.
+            </p>
+            <h3 id="corrector-goals">
+                Corrector Goals
+            </h3>
+            <p>
+                This feature evolved from observing our first user. As progressive loss of motor control led to both increased typos and increased correction time, the goal was provide a reasonable chance (>70%) of correction within a couple of simple keystrokes to prevent frustration.
+            </p>
+        </main>
+    </body>
+</html>
