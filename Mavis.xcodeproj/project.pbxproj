@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		135478002C9FA129006BD7E6 /* startSharePlay.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 135477FF2C9FA129006BD7E6 /* startSharePlay.applescript */; };
+		136579672CC312B0004C0CAA /* MSJSONRPCProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 136579662CC312B0004C0CAA /* MSJSONRPCProcess.m */; };
+		1365796D2CC42416004C0CAA /* MSJSONRPCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1365796C2CC42416004C0CAA /* MSJSONRPCClient.m */; };
+		1365797C2CC5BB23004C0CAA /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 1365797B2CC5BB10004C0CAA /* Sounds */; };
+		13B0EC562C9926F800038464 /* SoundCzech.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B0EC552C9926F800038464 /* SoundCzech.m */; };
+		13BEB08D2BF1E51B0077AE49 /* MSScoredString.m in Sources */ = {isa = PBXBuildFile; fileRef = 13BEB08C2BF1E51B0077AE49 /* MSScoredString.m */; };
+		13EDFD5A2CD4952000DE1F64 /* MSIsNotEmptyString.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EDFD592CD4952000DE1F64 /* MSIsNotEmptyString.m */; };
+		13F2ACBD2CAA7F0E00D04634 /* AudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F2ACBC2CAA7F0E00D04634 /* AudioManager.m */; };
+		13F2ACC02CAEFD0900D04634 /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F2ACBF2CAEFD0800D04634 /* FileManager.m */; };
+		13F2ACC32CAF24EF00D04634 /* SpeechManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F2ACC22CAF24EF00D04634 /* SpeechManager.m */; };
+		13F4BDC22CC62B9200CFB15E /* MSCompletionWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F4BDC12CC62B9200CFB15E /* MSCompletionWindow.m */; };
+		13FB092F2BF276A6009FD3F0 /* MSTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13FB092E2BF276A6009FD3F0 /* MSTextView.m */; };
+		272468802BFDCE65009B5373 /* MSAXScript.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724687F2BFDCE65009B5373 /* MSAXScript.m */; };
+		273C4FD42C023522004B3743 /* MSTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C4FD32C023522004B3743 /* MSTableView.m */; };
+		273C4FDC2C023F94004B3743 /* MavisTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C4FDB2C023F94004B3743 /* MavisTests.m */; };
+		273C4FED2C02E9E7004B3743 /* AVSpeechSynthesisVoice+Mavis.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C4FEC2C02E9E7004B3743 /* AVSpeechSynthesisVoice+Mavis.m */; };
+		276C7DF22C02F34B009D670E /* FaceTimeIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = 276C7DF12C02F34B009D670E /* FaceTimeIntegration.m */; };
+		276C7DF82C031839009D670E /* UpdateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 276C7DF72C031839009D670E /* UpdateManager.m */; };
+		276C7DFE2C031BB2009D670E /* CompletionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 276C7DFD2C031BB2009D670E /* CompletionManager.m */; };
+		27933FCE2BE1B19B007A0C82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27933FCD2BE1B19B007A0C82 /* AppDelegate.m */; };
+		27933FD12BE1B19B007A0C82 /* Mavis.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 27933FCF2BE1B19B007A0C82 /* Mavis.xcdatamodeld */; };
+		27933FD32BE1B19D007A0C82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27933FD22BE1B19D007A0C82 /* Assets.xcassets */; };
+		27933FD62BE1B19D007A0C82 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27933FD42BE1B19D007A0C82 /* MainMenu.xib */; };
+		27933FD82BE1B19D007A0C82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27933FD72BE1B19D007A0C82 /* main.m */; };
+		27A98C352C08E2A0008425AD /* Help in Resources */ = {isa = PBXBuildFile; fileRef = 27A98C342C08E2A0008425AD /* Help */; };
+		27D26A4C2EE3ECFF005E7461 /* MavisCorrector.plugin in Resources */ = {isa = PBXBuildFile; fileRef = 27D26A4B2EE3ECFF005E7461 /* MavisCorrector.plugin */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		273C4FDD2C023F94004B3743 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27933FC12BE1B19B007A0C82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27933FC82BE1B19B007A0C82;
+			remoteInfo = Mavis;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		135477FF2C9FA129006BD7E6 /* startSharePlay.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = startSharePlay.applescript; sourceTree = "<group>"; };
+		136579652CC312B0004C0CAA /* MSJSONRPCProcess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSJSONRPCProcess.h; sourceTree = "<group>"; };
+		136579662CC312B0004C0CAA /* MSJSONRPCProcess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSJSONRPCProcess.m; sourceTree = "<group>"; };
+		1365796B2CC42416004C0CAA /* MSJSONRPCClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSJSONRPCClient.h; sourceTree = "<group>"; };
+		1365796C2CC42416004C0CAA /* MSJSONRPCClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSJSONRPCClient.m; sourceTree = "<group>"; };
+		1365797B2CC5BB10004C0CAA /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
+		13B0EC552C9926F800038464 /* SoundCzech.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundCzech.m; sourceTree = "<group>"; };
+		13B0EC572C9928DB00038464 /* SoundCzech.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoundCzech.h; sourceTree = "<group>"; };
+		13BEB08B2BF1E51B0077AE49 /* MSScoredString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSScoredString.h; sourceTree = "<group>"; };
+		13BEB08C2BF1E51B0077AE49 /* MSScoredString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSScoredString.m; sourceTree = "<group>"; };
+		13E4FBD32C21C90100BA6D13 /* Curiosities.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Curiosities.md; sourceTree = "<group>"; };
+		13EDFD582CD4952000DE1F64 /* MSIsNotEmptyString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSIsNotEmptyString.h; sourceTree = "<group>"; };
+		13EDFD592CD4952000DE1F64 /* MSIsNotEmptyString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSIsNotEmptyString.m; sourceTree = "<group>"; };
+		13F2ACBB2CAA7F0E00D04634 /* AudioManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioManager.h; sourceTree = "<group>"; };
+		13F2ACBC2CAA7F0E00D04634 /* AudioManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioManager.m; sourceTree = "<group>"; };
+		13F2ACBE2CAEFD0800D04634 /* FileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
+		13F2ACBF2CAEFD0800D04634 /* FileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
+		13F2ACC12CAF24EF00D04634 /* SpeechManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeechManager.h; sourceTree = "<group>"; };
+		13F2ACC22CAF24EF00D04634 /* SpeechManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeechManager.m; sourceTree = "<group>"; };
+		13F4BDC02CC62B9200CFB15E /* MSCompletionWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSCompletionWindow.h; sourceTree = "<group>"; };
+		13F4BDC12CC62B9200CFB15E /* MSCompletionWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSCompletionWindow.m; sourceTree = "<group>"; };
+		13FB092D2BF276A6009FD3F0 /* MSTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSTextView.h; sourceTree = "<group>"; };
+		13FB092E2BF276A6009FD3F0 /* MSTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSTextView.m; sourceTree = "<group>"; };
+		2724687E2BFDCE65009B5373 /* MSAXScript.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSAXScript.h; sourceTree = "<group>"; };
+		2724687F2BFDCE65009B5373 /* MSAXScript.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSAXScript.m; sourceTree = "<group>"; };
+		272472B62EE8AA2200C185EB /* build-release.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "build-release.sh"; sourceTree = "<group>"; };
+		272472B72EE8AA3E00C185EB /* build-dmg.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "build-dmg.sh"; sourceTree = "<group>"; };
+		273C4FD22C023522004B3743 /* MSTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSTableView.h; sourceTree = "<group>"; };
+		273C4FD32C023522004B3743 /* MSTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSTableView.m; sourceTree = "<group>"; };
+		273C4FD92C023F94004B3743 /* MavisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MavisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		273C4FDB2C023F94004B3743 /* MavisTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MavisTests.m; sourceTree = "<group>"; };
+		273C4FEB2C02E9E7004B3743 /* AVSpeechSynthesisVoice+Mavis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVSpeechSynthesisVoice+Mavis.h"; sourceTree = "<group>"; };
+		273C4FEC2C02E9E7004B3743 /* AVSpeechSynthesisVoice+Mavis.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AVSpeechSynthesisVoice+Mavis.m"; sourceTree = "<group>"; };
+		2742B80E2BFF22C000F2F94F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		276C7DF02C02F34B009D670E /* FaceTimeIntegration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceTimeIntegration.h; sourceTree = "<group>"; };
+		276C7DF12C02F34B009D670E /* FaceTimeIntegration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceTimeIntegration.m; sourceTree = "<group>"; };
+		276C7DF62C031839009D670E /* UpdateManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpdateManager.h; sourceTree = "<group>"; };
+		276C7DF72C031839009D670E /* UpdateManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpdateManager.m; sourceTree = "<group>"; };
+		276C7DFC2C031BB2009D670E /* CompletionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompletionManager.h; sourceTree = "<group>"; };
+		276C7DFD2C031BB2009D670E /* CompletionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompletionManager.m; sourceTree = "<group>"; };
+		27933FC92BE1B19B007A0C82 /* Mavis AAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mavis AAC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27933FCC2BE1B19B007A0C82 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		27933FCD2BE1B19B007A0C82 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		27933FD02BE1B19B007A0C82 /* Mavis.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mavis.xcdatamodel; sourceTree = "<group>"; };
+		27933FD22BE1B19D007A0C82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27933FD52BE1B19D007A0C82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		27933FD72BE1B19D007A0C82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		27933FD92BE1B19D007A0C82 /* Mavis.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mavis.entitlements; sourceTree = "<group>"; };
+		27A98C342C08E2A0008425AD /* Help */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Help; sourceTree = SOURCE_ROOT; };
+		27D26A4B2EE3ECFF005E7461 /* MavisCorrector.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MavisCorrector.plugin; path = "../mavis-corrector-priv/derived.noindex/dist/MavisCorrector.plugin"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		273C4FD62C023F93004B3743 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27933FC62BE1B19B007A0C82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		273C4FDA2C023F94004B3743 /* MavisTests */ = {
+			isa = PBXGroup;
+			children = (
+				273C4FDB2C023F94004B3743 /* MavisTests.m */,
+			);
+			path = MavisTests;
+			sourceTree = "<group>";
+		};
+		27933FC02BE1B19B007A0C82 = {
+			isa = PBXGroup;
+			children = (
+				272472B62EE8AA2200C185EB /* build-release.sh */,
+				272472B72EE8AA3E00C185EB /* build-dmg.sh */,
+				27D26A4B2EE3ECFF005E7461 /* MavisCorrector.plugin */,
+				2742B80E2BFF22C000F2F94F /* README.md */,
+				13E4FBD32C21C90100BA6D13 /* Curiosities.md */,
+				1365797B2CC5BB10004C0CAA /* Sounds */,
+				27A98C342C08E2A0008425AD /* Help */,
+				27933FCB2BE1B19B007A0C82 /* Mavis */,
+				273C4FDA2C023F94004B3743 /* MavisTests */,
+				27933FCA2BE1B19B007A0C82 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27933FCA2BE1B19B007A0C82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27933FC92BE1B19B007A0C82 /* Mavis AAC.app */,
+				273C4FD92C023F94004B3743 /* MavisTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27933FCB2BE1B19B007A0C82 /* Mavis */ = {
+			isa = PBXGroup;
+			children = (
+				27933FCC2BE1B19B007A0C82 /* AppDelegate.h */,
+				27933FCD2BE1B19B007A0C82 /* AppDelegate.m */,
+				27933FD22BE1B19D007A0C82 /* Assets.xcassets */,
+				13F2ACBB2CAA7F0E00D04634 /* AudioManager.h */,
+				13F2ACBC2CAA7F0E00D04634 /* AudioManager.m */,
+				273C4FEB2C02E9E7004B3743 /* AVSpeechSynthesisVoice+Mavis.h */,
+				273C4FEC2C02E9E7004B3743 /* AVSpeechSynthesisVoice+Mavis.m */,
+				276C7DFC2C031BB2009D670E /* CompletionManager.h */,
+				276C7DFD2C031BB2009D670E /* CompletionManager.m */,
+				276C7DF02C02F34B009D670E /* FaceTimeIntegration.h */,
+				276C7DF12C02F34B009D670E /* FaceTimeIntegration.m */,
+				13F2ACBE2CAEFD0800D04634 /* FileManager.h */,
+				13F2ACBF2CAEFD0800D04634 /* FileManager.m */,
+				27933FD72BE1B19D007A0C82 /* main.m */,
+				27933FD42BE1B19D007A0C82 /* MainMenu.xib */,
+				27933FD92BE1B19D007A0C82 /* Mavis.entitlements */,
+				27933FCF2BE1B19B007A0C82 /* Mavis.xcdatamodeld */,
+				2724687E2BFDCE65009B5373 /* MSAXScript.h */,
+				2724687F2BFDCE65009B5373 /* MSAXScript.m */,
+				13F4BDC02CC62B9200CFB15E /* MSCompletionWindow.h */,
+				13F4BDC12CC62B9200CFB15E /* MSCompletionWindow.m */,
+				13EDFD582CD4952000DE1F64 /* MSIsNotEmptyString.h */,
+				13EDFD592CD4952000DE1F64 /* MSIsNotEmptyString.m */,
+				1365796B2CC42416004C0CAA /* MSJSONRPCClient.h */,
+				1365796C2CC42416004C0CAA /* MSJSONRPCClient.m */,
+				136579652CC312B0004C0CAA /* MSJSONRPCProcess.h */,
+				136579662CC312B0004C0CAA /* MSJSONRPCProcess.m */,
+				13BEB08B2BF1E51B0077AE49 /* MSScoredString.h */,
+				13BEB08C2BF1E51B0077AE49 /* MSScoredString.m */,
+				273C4FD22C023522004B3743 /* MSTableView.h */,
+				273C4FD32C023522004B3743 /* MSTableView.m */,
+				13FB092D2BF276A6009FD3F0 /* MSTextView.h */,
+				13FB092E2BF276A6009FD3F0 /* MSTextView.m */,
+				13B0EC572C9928DB00038464 /* SoundCzech.h */,
+				13B0EC552C9926F800038464 /* SoundCzech.m */,
+				13F2ACC12CAF24EF00D04634 /* SpeechManager.h */,
+				13F2ACC22CAF24EF00D04634 /* SpeechManager.m */,
+				135477FF2C9FA129006BD7E6 /* startSharePlay.applescript */,
+				276C7DF62C031839009D670E /* UpdateManager.h */,
+				276C7DF72C031839009D670E /* UpdateManager.m */,
+			);
+			path = Mavis;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		273C4FD82C023F93004B3743 /* MavisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 273C4FDF2C023F94004B3743 /* Build configuration list for PBXNativeTarget "MavisTests" */;
+			buildPhases = (
+				273C4FD52C023F93004B3743 /* Sources */,
+				273C4FD62C023F93004B3743 /* Frameworks */,
+				273C4FD72C023F93004B3743 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				273C4FDE2C023F94004B3743 /* PBXTargetDependency */,
+			);
+			name = MavisTests;
+			productName = MavisTests;
+			productReference = 273C4FD92C023F94004B3743 /* MavisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		27933FC82BE1B19B007A0C82 /* Mavis AAC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27933FDC2BE1B19D007A0C82 /* Build configuration list for PBXNativeTarget "Mavis AAC" */;
+			buildPhases = (
+				27933FC52BE1B19B007A0C82 /* Sources */,
+				27933FC62BE1B19B007A0C82 /* Frameworks */,
+				27933FC72BE1B19B007A0C82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mavis AAC";
+			productName = Mavis;
+			productReference = 27933FC92BE1B19B007A0C82 /* Mavis AAC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27933FC12BE1B19B007A0C82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					273C4FD82C023F93004B3743 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 27933FC82BE1B19B007A0C82;
+					};
+					27933FC82BE1B19B007A0C82 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 27933FC42BE1B19B007A0C82 /* Build configuration list for PBXProject "Mavis" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27933FC02BE1B19B007A0C82;
+			productRefGroup = 27933FCA2BE1B19B007A0C82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27933FC82BE1B19B007A0C82 /* Mavis AAC */,
+				273C4FD82C023F93004B3743 /* MavisTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		273C4FD72C023F93004B3743 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27933FC72BE1B19B007A0C82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1365797C2CC5BB23004C0CAA /* Sounds in Resources */,
+				27A98C352C08E2A0008425AD /* Help in Resources */,
+				27933FD32BE1B19D007A0C82 /* Assets.xcassets in Resources */,
+				27D26A4C2EE3ECFF005E7461 /* MavisCorrector.plugin in Resources */,
+				27933FD62BE1B19D007A0C82 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		273C4FD52C023F93004B3743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				273C4FDC2C023F94004B3743 /* MavisTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27933FC52BE1B19B007A0C82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				273C4FD42C023522004B3743 /* MSTableView.m in Sources */,
+				1365796D2CC42416004C0CAA /* MSJSONRPCClient.m in Sources */,
+				13B0EC562C9926F800038464 /* SoundCzech.m in Sources */,
+				13F2ACBD2CAA7F0E00D04634 /* AudioManager.m in Sources */,
+				13FB092F2BF276A6009FD3F0 /* MSTextView.m in Sources */,
+				276C7DFE2C031BB2009D670E /* CompletionManager.m in Sources */,
+				272468802BFDCE65009B5373 /* MSAXScript.m in Sources */,
+				276C7DF22C02F34B009D670E /* FaceTimeIntegration.m in Sources */,
+				273C4FED2C02E9E7004B3743 /* AVSpeechSynthesisVoice+Mavis.m in Sources */,
+				13F2ACC02CAEFD0900D04634 /* FileManager.m in Sources */,
+				27933FD12BE1B19B007A0C82 /* Mavis.xcdatamodeld in Sources */,
+				276C7DF82C031839009D670E /* UpdateManager.m in Sources */,
+				27933FD82BE1B19D007A0C82 /* main.m in Sources */,
+				13BEB08D2BF1E51B0077AE49 /* MSScoredString.m in Sources */,
+				13EDFD5A2CD4952000DE1F64 /* MSIsNotEmptyString.m in Sources */,
+				13F2ACC32CAF24EF00D04634 /* SpeechManager.m in Sources */,
+				136579672CC312B0004C0CAA /* MSJSONRPCProcess.m in Sources */,
+				27933FCE2BE1B19B007A0C82 /* AppDelegate.m in Sources */,
+				13F4BDC22CC62B9200CFB15E /* MSCompletionWindow.m in Sources */,
+				135478002C9FA129006BD7E6 /* startSharePlay.applescript in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		273C4FDE2C023F94004B3743 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27933FC82BE1B19B007A0C82 /* Mavis AAC */;
+			targetProxy = 273C4FDD2C023F94004B3743 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		27933FD42BE1B19D007A0C82 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27933FD52BE1B19D007A0C82 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		273C4FE02C023F94004B3743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 16;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0.16;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lazybearlabs.MavisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mavis.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mavis";
+			};
+			name = Debug;
+		};
+		273C4FE12C023F94004B3743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 16;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0.16;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lazybearlabs.MavisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mavis.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mavis";
+			};
+			name = Release;
+		};
+		27933FDA2BE1B19D007A0C82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		27933FDB2BE1B19D007A0C82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		27933FDD2BE1B19D007A0C82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Mavis/Mavis.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 16;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = K95PCKP5T4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Mavis needs to control System Events";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.16;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lazybearlabs.MavisAAC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		27933FDE2BE1B19D007A0C82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Mavis/Mavis.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 16;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = K95PCKP5T4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Mavis needs to control System Events";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.16;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lazybearlabs.MavisAAC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		273C4FDF2C023F94004B3743 /* Build configuration list for PBXNativeTarget "MavisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				273C4FE02C023F94004B3743 /* Debug */,
+				273C4FE12C023F94004B3743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27933FC42BE1B19B007A0C82 /* Build configuration list for PBXProject "Mavis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27933FDA2BE1B19D007A0C82 /* Debug */,
+				27933FDB2BE1B19D007A0C82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27933FDC2BE1B19D007A0C82 /* Build configuration list for PBXNativeTarget "Mavis AAC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27933FDD2BE1B19D007A0C82 /* Debug */,
+				27933FDE2BE1B19D007A0C82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		27933FCF2BE1B19B007A0C82 /* Mavis.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				27933FD02BE1B19B007A0C82 /* Mavis.xcdatamodel */,
+			);
+			currentVersion = 27933FD02BE1B19B007A0C82 /* Mavis.xcdatamodel */;
+			path = Mavis.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 27933FC12BE1B19B007A0C82 /* Project object */;
+}

@@ -1,0 +1,15 @@
+BasedOnStyle: LLVM
+AllowShortIfStatementsOnASingleLine: false
+AllowShortBlocksOnASingleLine: false
+AllowShortFunctionsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AlwaysBreakBeforeMultilineStrings: false
+IndentCaseLabels: true
+ColumnLimit: 120
+ObjCSpaceAfterProperty: true
+KeepEmptyLinesAtTheStartOfBlocks: true
+PenaltyBreakString: 1000000
+PointerAlignment: Left
+SpacesInContainerLiterals: false
+UseTab: Never
+IndentWidth: 4
