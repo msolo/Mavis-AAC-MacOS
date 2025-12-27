@@ -5,8 +5,8 @@
 #import <Cocoa/Cocoa.h>
 #import <CoreData/CoreData.h>
 
-@interface AppDelegate
-    : NSObject <NSApplicationDelegate, NSControlTextEditingDelegate, NSTableViewDataSource, NSTextFieldDelegate> {
+@interface AppDelegate : NSObject <NSApplicationDelegate, NSControlTextEditingDelegate, NSTableViewDataSource,
+                                   NSTextFieldDelegate, NSAlertDelegate> {
     SoundLevelMonitor* noiseMonitor;
 
     IBOutlet NSWindow* window;

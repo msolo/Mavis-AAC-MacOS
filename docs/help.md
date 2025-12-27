@@ -207,3 +207,10 @@ This is useful as long as the builtin dictionary match the words you normally us
 
 This feature evolved from observing our first user. As progressive loss of motor control led to both increased typos and increased correction time, the goal was provide a reasonable chance (>70%) of correction within a couple of simple keystrokes to prevent frustration.
 
+# Warnings and Alerts
+
+## Default Voice Warning
+
+If Mavis does not find a Personal, Enhanced or Premium voice to use it will show a dialog on launch. It will instead pick the first voice in the system language that is installed.
+
+If you select **Take Me To Settings**, the **System Settings** app will open to the **Live Speech** section. There you can use the **Voice** section to select "Manage Voices..." which will allow you to download and install other voices from Apple.

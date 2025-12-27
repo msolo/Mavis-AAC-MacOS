@@ -28,7 +28,7 @@ On the iPad, Mavis AAC has been optimized for use with an external wireless keyb
 
 Mavis AAC should work all the way back to Big Sur. However, Personal Voice and FaceTime integration only work on Sonoma or newer.
 
-<img srcset="docs/img/mavis-window.webp 2x" alt="Mavis AAC Application Window" class="center">
+<img srcset="docs/img/mavis-window-2x.webp 2x" alt="Mavis AAC Application Window" class="center">
 
 # Features At A Glance
 
@@ -64,11 +64,11 @@ Mavis AAC will trigger permission requests for **Accessibility Access** and **Pe
 
 Mavis AAC will trigger a permission request for Accessibility Access so it can integrate with FaceTime calls.
 
-<img srcset="docs/img/accessibility-access-dialog.webp 2x" alt="Accessibility Dialog" class="center">
+<img srcset="docs/img/accessibility-access-dialog-2x.webp 2x" alt="Accessibility Dialog" class="center">
 
 Select "Open System Settings".
 
-<img srcset="docs/img/accessibility-access-preferences.webp 2x" alt="Accessibility Enable" class="center">
+<img srcset="docs/img/accessibility-access-preferences-2x.webp 2x" alt="Accessibility Enable" class="center">
 
 Make sure this toggle is enabled to allow Mavis to integrate with FaceTime calls.
 
@@ -76,11 +76,11 @@ Make sure this toggle is enabled to allow Mavis to integrate with FaceTime calls
 
 Before Mavis AAC can ask for permission to use your Personal Voice, you must allow applications to even request that permission.
 
-<img srcset="docs/img/personal-voice-preferences.webp 2x" alt="Personal Voice Preferences" class="center">
+<img srcset="docs/img/personal-voice-preferences-2x.webp 2x" alt="Personal Voice Preferences" class="center">
 
 Make sure this toggle is enabled and restart Mavis AAC. You should now see a request for permission to use your Personal Voice.
 
-<img srcset="docs/img/personal-voice-permission.webp 2x" alt="Personal Voice Permission" class="center">
+<img srcset="docs/img/personal-voice-permission-2x.webp 2x" alt="Personal Voice Permission" class="center">
 
 Once you click "Allow", Mavis AAC will be able to use your personal voice.
 

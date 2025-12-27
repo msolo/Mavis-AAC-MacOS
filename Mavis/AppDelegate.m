@@ -27,6 +27,7 @@ static NSArray<NSString*>* commonAbbreviations;
 
 + (void)errorAlertWithMessage:(NSString*)msg andInfo:(NSString*)info {
     NSAlert* alert = [[NSAlert alloc] init];
+    alert.alertStyle = NSAlertStyleCritical;
     alert.messageText = msg;
     alert.informativeText = info;
     [alert addButtonWithTitle:@"OK"];
@@ -162,26 +163,66 @@ static NSArray<NSString*>* commonAbbreviations;
     self.voices = [sm getVoices];
     self.voice = [sm defaultVoice];
     if (self.voices.count == 1 && self.voice.quality == AVSpeechSynthesisVoiceQualityDefault) {
-        [AppDelegate voiceInstallAlert];
+        [self voiceInstallAlert];
     }
 }
 
-+ (void)voiceInstallAlert {
+- (void)voiceInstallAlert {
     NSAlert* alert = [[NSAlert alloc] init];
-    [alert setMessageText:@"Voice Warning"];
-    [alert setInformativeText:@"No suitable high quality voices are installed. Would you like to install some now?"];
+    alert.showsHelp = YES;
+    alert.helpAnchor = @"default-voice-warning";
+    alert.alertStyle = NSAlertStyleInformational;
+    [alert setDelegate:self];
+    [alert setMessageText:@"Default Voice Warning"];
+    [alert setInformativeText:@"Mavis will use a default voice since no high quality voices are installed.\n\nWould "
+                              @"you like to install some high quality voices now?"];
 
-    [alert addButtonWithTitle:@"OK"];
-    [alert addButtonWithTitle:@"Cancel"];
+    [alert addButtonWithTitle:@"Take Me To Settings"];
+    [alert addButtonWithTitle:@"Skip"];
+    [alert beginSheetModalForWindow:window
+                  completionHandler:^(NSModalResponse response) {
+                    if (response == NSAlertFirstButtonReturn) {
+                        // "Take Me To Settings" button clicked
+                        // Sadly, this US not really useful
+                        NSURL* url = [NSURL
+                            URLWithString:@"x-apple.systempreferences:com.apple.preference.universalaccess?LiveSpeech"];
+                        [[NSWorkspace sharedWorkspace] openURL:url];
+                        [AppDelegate showManageVoices];
+                    }
+                  }];
+}
 
-    NSModalResponse response = [alert runModal];
-
-    if (response == NSAlertFirstButtonReturn) {
-        // "OK" button clicked
-        NSURL* url =
-            [NSURL URLWithString:@"x-apple.systempreferences:com.apple.preference.universalaccess?TextToSpeech"];
-        [[NSWorkspace sharedWorkspace] openURL:url];
+// This clearly needs to be changes every major OS release.
++ (void)showManageVoices {
+    if (@available(macOS 15, *)) {
+        return [AppDelegate showManageVoicesOS15];
     }
+}
+
++ (void)showManageVoicesOS15 {
+    NSURL* url = [[NSBundle mainBundle] URLForResource:@"showManageVoices" withExtension:@"scpt"];
+
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+      NSDictionary* errDict;
+
+      NSAppleScript* script = [[NSAppleScript alloc] initWithContentsOfURL:url error:&errDict];
+      if (errDict != nil) {
+          NSLog(@"error loading script showManageVoices: %@", errDict);
+          return;
+      }
+
+      [script executeAndReturnError:&errDict];
+      if (errDict != nil) {
+          NSLog(@"error during showManageVoices: %@", errDict);
+      }
+    });
+}
+
+- (BOOL)alertShowHelp:(NSAlert*)alert {
+    [[NSWorkspace sharedWorkspace]
+        openURL:[NSURL URLWithString:[@"https://lazybearlabs.com/apps/mavis-aac/macos/help.html"
+                                         stringByAppendingFormat:@"#%@", alert.helpAnchor]]];
+    return YES;
 }
 
 - (void)startNoiseMonitor {

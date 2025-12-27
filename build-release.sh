@@ -19,8 +19,8 @@ fi
 
 APP_NAME="Mavis AAC"
 # Set the version and build numbers
-VERSION_NUMBER="1.0.16"
-BUILD_NUMBER="16"
+VERSION_NUMBER="1.0.17"
+BUILD_NUMBER="17"
 
 # Set the Xcode project file path
 PROJECT_DIR="Mavis.xcodeproj"

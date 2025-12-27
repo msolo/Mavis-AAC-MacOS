@@ -32,7 +32,8 @@
 		27933FD62BE1B19D007A0C82 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27933FD42BE1B19D007A0C82 /* MainMenu.xib */; };
 		27933FD82BE1B19D007A0C82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27933FD72BE1B19D007A0C82 /* main.m */; };
 		27A98C352C08E2A0008425AD /* Help in Resources */ = {isa = PBXBuildFile; fileRef = 27A98C342C08E2A0008425AD /* Help */; };
-		27D26A4C2EE3ECFF005E7461 /* MavisCorrector.plugin in Resources */ = {isa = PBXBuildFile; fileRef = 27D26A4B2EE3ECFF005E7461 /* MavisCorrector.plugin */; };
+		27BC25602EFA143500153AA7 /* MavisCorrector.plugin in Resources */ = {isa = PBXBuildFile; fileRef = 27BC255F2EFA143500153AA7 /* MavisCorrector.plugin */; };
+		27FB0E982EFF655900E87624 /* showManageVoices.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 27FB0E972EFE46A900E87624 /* showManageVoices.applescript */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,7 +96,8 @@
 		27933FD72BE1B19D007A0C82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		27933FD92BE1B19D007A0C82 /* Mavis.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mavis.entitlements; sourceTree = "<group>"; };
 		27A98C342C08E2A0008425AD /* Help */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Help; sourceTree = SOURCE_ROOT; };
-		27D26A4B2EE3ECFF005E7461 /* MavisCorrector.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MavisCorrector.plugin; path = "../mavis-corrector-priv/derived.noindex/dist/MavisCorrector.plugin"; sourceTree = SOURCE_ROOT; };
+		27BC255F2EFA143500153AA7 /* MavisCorrector.plugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MavisCorrector.plugin; path = "mavis-corrector/derived.noindex/dist/MavisCorrector.plugin"; sourceTree = "<group>"; };
+		27FB0E972EFE46A900E87624 /* showManageVoices.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = showManageVoices.applescript; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +131,7 @@
 			children = (
 				272472B62EE8AA2200C185EB /* build-release.sh */,
 				272472B72EE8AA3E00C185EB /* build-dmg.sh */,
-				27D26A4B2EE3ECFF005E7461 /* MavisCorrector.plugin */,
+				27BC255F2EFA143500153AA7 /* MavisCorrector.plugin */,
 				2742B80E2BFF22C000F2F94F /* README.md */,
 				13E4FBD32C21C90100BA6D13 /* Curiosities.md */,
 				1365797B2CC5BB10004C0CAA /* Sounds */,
@@ -189,9 +191,10 @@
 				13B0EC552C9926F800038464 /* SoundCzech.m */,
 				13F2ACC12CAF24EF00D04634 /* SpeechManager.h */,
 				13F2ACC22CAF24EF00D04634 /* SpeechManager.m */,
-				135477FF2C9FA129006BD7E6 /* startSharePlay.applescript */,
 				276C7DF62C031839009D670E /* UpdateManager.h */,
 				276C7DF72C031839009D670E /* UpdateManager.m */,
+				27FB0E972EFE46A900E87624 /* showManageVoices.applescript */,
+				135477FF2C9FA129006BD7E6 /* startSharePlay.applescript */,
 			);
 			path = Mavis;
 			sourceTree = "<group>";
@@ -286,8 +289,8 @@
 				1365797C2CC5BB23004C0CAA /* Sounds in Resources */,
 				27A98C352C08E2A0008425AD /* Help in Resources */,
 				27933FD32BE1B19D007A0C82 /* Assets.xcassets in Resources */,
-				27D26A4C2EE3ECFF005E7461 /* MavisCorrector.plugin in Resources */,
 				27933FD62BE1B19D007A0C82 /* MainMenu.xib in Resources */,
+				27BC25602EFA143500153AA7 /* MavisCorrector.plugin in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27FB0E982EFF655900E87624 /* showManageVoices.applescript in Sources */,
 				273C4FD42C023522004B3743 /* MSTableView.m in Sources */,
 				1365796D2CC42416004C0CAA /* MSJSONRPCClient.m in Sources */,
 				13B0EC562C9926F800038464 /* SoundCzech.m in Sources */,
@@ -358,14 +362,14 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 16;
+				CURRENT_PROJECT_VERSION = 17;
 				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0.16;
+				MARKETING_VERSION = 1.0.17;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lazybearlabs.MavisTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -384,14 +388,14 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 16;
+				CURRENT_PROJECT_VERSION = 17;
 				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0.16;
+				MARKETING_VERSION = 1.0.17;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lazybearlabs.MavisTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -529,7 +533,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 16;
+				CURRENT_PROJECT_VERSION = 17;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = K95PCKP5T4;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -543,7 +547,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.16;
+				MARKETING_VERSION = 1.0.17;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lazybearlabs.MavisAAC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -560,7 +564,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 16;
+				CURRENT_PROJECT_VERSION = 17;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = K95PCKP5T4;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -574,7 +578,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.16;
+				MARKETING_VERSION = 1.0.17;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lazybearlabs.MavisAAC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

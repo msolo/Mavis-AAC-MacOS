@@ -240,8 +240,9 @@ img.center {
 }
 
 @media (max-width: 600px) {
-  main img {
-    margin: 0.5rem auto;
+
+  .mobile-center {
+    text-align: center;
   }
 
    
@@ -417,6 +418,14 @@ button:disabled {
                                         <a href="#corrector-goals">Corrector Goals</a>
                                     </li>
                                 </ul>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#warnings-and-alerts">Warnings and Alerts</a>
+                            <ul>
+                                <li>
+                                    <a href="#default-voice-warning">Default Voice Warning</a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -718,6 +727,18 @@ thx|thanks
             </h3>
             <p>
                 This feature evolved from observing our first user. As progressive loss of motor control led to both increased typos and increased correction time, the goal was provide a reasonable chance (>70%) of correction within a couple of simple keystrokes to prevent frustration.
+            </p>
+            <h1 id="warnings-and-alerts">
+                Warnings and Alerts
+            </h1>
+            <h2 id="default-voice-warning">
+                Default Voice Warning
+            </h2>
+            <p>
+                If Mavis does not find a Personal, Enhanced or Premium voice to use it will show a dialog on launch. It will instead pick the first voice in the system language that is installed.
+            </p>
+            <p>
+                If you select <strong>Take Me To Settings</strong>, the <strong>System Settings</strong> app will open to the <strong>Live Speech</strong> section. There you can use the <strong>Voice</strong> section to select “Manage Voices…” which will allow you to download and install other voices from Apple.
             </p>
         </main>
     </body>
